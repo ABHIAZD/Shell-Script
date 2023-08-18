@@ -1,5 +1,7 @@
 #!/bin/bash
 
 echo "hi hello world"
-echo "tstign "
-echo "hi abhishek"
+echo "Hi abhishek"
+echo "Hi mahesh"
+echo "how are you abhishek"
+echo "fine mahesh"
