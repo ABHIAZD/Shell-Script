@@ -21,7 +21,7 @@ then
 echo "error: please do it as root user"
 exit 1
 fi
-yum install mysql -y
-validate $? "installing mysql" &>>$LOGFILE
-yum install postfix -y
-validate $? "installing postfix" &>>$LOGFILE
+yum install mysql -y &>>$LOGFILE
+validate $? "installing mysql" 
+yum install postfix -y &>>$LOGFILE
+validate $? "installing postfix" 
