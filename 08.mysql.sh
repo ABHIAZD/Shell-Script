@@ -14,3 +14,4 @@ echo "error at mysql installation"
 else
 echo "mysql succeeded"
 fi
+yum remove mysql -y
