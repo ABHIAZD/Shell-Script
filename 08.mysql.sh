@@ -11,7 +11,7 @@ yum install mysql -y
 if [ $? -ne 0 ]
 then 
 echo "error at mysql installation"
+exit 1
 else
 echo "mysql succeeded"
 fi
-yum remove mysql -y
