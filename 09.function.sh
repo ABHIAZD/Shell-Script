@@ -4,10 +4,10 @@ userid=$(id -u)
 validate(){
     if [ $? -ne 0 ]
 then 
-echo "not installation"
+echo "$2 not installation"
 exit 1
 else
-echo " succeeded"
+echo "$2 succeeded"
 fi
 }
 if [ $userid -ne 0 ]
