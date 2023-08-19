@@ -2,7 +2,7 @@
 
 DATE=$(date +%F)
 SCRIPTNAME=$0
-Logfile=/tmp/$SCRIPTNAME-$DATE.log
+LOGFILE=/tmp/$SCRIPTNAME-$DATE.log
 
 validate(){
     if [ $? -ne 0 ]
@@ -22,6 +22,6 @@ echo "error: please do it as root user"
 exit 1
 fi
 yum install mysql -y
-validate $? "installing mysql" &>>$Logfile
+validate $? "installing mysql" &>>$LOGFILE
 yum install postfix -y
-validate $? "installing postfix" &>>$Logfile
+validate $? "installing postfix" &>>$LOGFILE
