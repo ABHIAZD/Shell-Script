@@ -16,6 +16,6 @@ echo "error: please do it as root user"
 exit 1
 fi
 yum install mysql -y
-validate $?
+validate $? "installing mysql"
 yum install postfix -y
-validate $?
+validate $? "installing postfix"
