@@ -15,3 +15,9 @@ exit 1
 else
 echo "mysql succeeded"
 fi
+yum install postfix -y
+if [ $? -ne 0 ]
+then
+echo "postfix not installed"
+exit 1
+else
