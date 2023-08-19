@@ -1,7 +1,7 @@
 #!/bin/bash
 
 userid=$(id -u)
-VALIDATE(){
+validate(){
     if [ $? -ne 0 ]
 then 
 echo "not installation"
@@ -16,6 +16,6 @@ echo "error: please do it as root user"
 exit 1
 fi
 yum install mysql -y
-VALIDATE $?
+validate $?
 yum install postfix -y
-VALIDATE $?
+validate $?
