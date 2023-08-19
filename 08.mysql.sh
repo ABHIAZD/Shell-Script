@@ -7,7 +7,7 @@ then
 echo "error: please do it as root user"
 exit 1
 fi
-yum install mysqll -y
+yum install mysql -y
 if [ $? -ne 0 ]
 then 
 echo "error at mysql installation"
