@@ -12,7 +12,7 @@ then
 echo -e "$2 $R not installation $N"
 exit 1
 else
-echo -e "$2 $R succeeded $N"
+echo -e "$2 $G succeeded $N"
 fi
 }
 
