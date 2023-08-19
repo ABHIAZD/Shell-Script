@@ -4,8 +4,6 @@ DATE=$(date +%F)
 SCRIPTNAME=$0
 Logfile=/tmp/$SCRIPTNAME-$DATE.log
 
-
-userid=$(id -u)
 validate(){
     if [ $? -ne 0 ]
 then 
@@ -15,6 +13,9 @@ else
 echo "$2 succeeded"
 fi
 }
+
+userid=$(id -u)
+
 if [ $userid -ne 0 ]
 then
 echo "error: please do it as root user"
